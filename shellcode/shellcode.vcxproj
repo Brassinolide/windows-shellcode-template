@@ -74,7 +74,7 @@
       <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
     </Link>
     <PostBuildEvent>
-      <Command>cd /d $(SolutionDir)&amp;&amp;$(SolutionDir)dumper.exe 32</Command>
+      <Command>cd /d "$(SolutionDir)"&amp;&amp;"$(SolutionDir)dumper.exe" 32</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -96,7 +96,7 @@
       <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
     </Link>
     <PostBuildEvent>
-      <Command>cd /d $(SolutionDir)&amp;&amp;$(SolutionDir)dumper.exe 64</Command>
+      <Command>cd /d "$(SolutionDir)"&amp;&amp;"$(SolutionDir)dumper.exe" 64</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
